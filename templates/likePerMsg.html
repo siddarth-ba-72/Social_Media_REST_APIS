@@ -1,0 +1,10 @@
+<h1>Total number of likes for each message</h1>
+<ul>
+    {% for key, val in likes_per_message.items() %}
+    <li>
+        <div>Message: {{key}}</div>
+        <div>Number of likes: {{val}}</div>
+        <br />
+    </li>
+    {% endfor %}
+</ul>
